@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+.optionsListRoundCorners {
+    border-radius: 10px;
+    width: 320px;
+}
+
+.accountListRoundCorners {
+    border-radius: 10px;
+    width: 320px;
+}
+
+.grayTextColor {
+    color: #5d5d5d;
+}
+
+.graySubTitleItemList {
+    color: #b5b5b5;
+}
+
+li:hover {
+    background-color: #d8f2ec;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.dot {
+    height: 40px;
+    width: 40px;
+    background-color: #e7e7e7;
+    border-style: solid;
+    border-color: #b5b5b5;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.buttonEnterStyle {
+    width: 160px;
+    height: 35px;
+    border: 1px solid #5ebda2; 
+    background-color: #5ebda2; 
+    color: #ffffff; 
+    border-radius: 50px;
+}
+
+.buttonPauseStyle {
+    width: 160px;
+    height: 35px;
+    border: 1px solid #b5b5b5; 
+    background-color: #b5b5b5; 
+    color: #ffffff; 
+    border-radius: 50px;
+}
+
+.buttonExitStyle {
+    width: 160px;
+    height: 35px;
+    border: 1px solid #ff9984; 
+    background-color: #ff9984; 
+    color: #ffffff; 
+    border-radius: 50px;
+}
+
+.headerBackgroundStyle {
+    background-color: #e5e5e5;
+    border-radius: 50px;
+}
+
+.timeStartColor {
+    color: #5b5b5b;
+}
+
+.timeEndColor {
+    color: #bbbbbb;
+}
+
+.usernameStyle {
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+.pointerCursor {
+    cursor: pointer;
+}

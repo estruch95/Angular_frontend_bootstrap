@@ -1,0 +1,33 @@
+<div class="row d-flex align-items-center" style="height: 60px;">
+    <div class="col-3 d-flex align-items-center justify-content-end">
+        <label class="timeStartColor">{{startTimeSession}}</label> &nbsp; <label class="timeEndColor" *ngIf="inSession">/</label> &nbsp; <label class="timeEndColor" *ngIf="inSession">{{endTimeSession}} </label>
+    </div>
+    <div class="col-5">
+        <div class="row">
+            <div class="col d-flex justify-content-end">
+                <button type="button" class="buttonEnterStyle" (click)="openSession()" [ngClass]="{'buttonPauseStyle':inSession}">{{ (inSession) ? 'Pausar' : 'Entrar'}}</button>
+            </div>
+            <div class="col d-flex justify-content-start" *ngIf="inSession">
+                <button type="button" class="buttonExitStyle" (click)="closeSession()">Salir</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="row d-flex align-items-center">
+            <div class="col-1">
+                <div class="d-flex" style="height: 30px;">
+                    <div class="vr"></div>
+                </div>
+            </div>
+            <div class="col-2">
+                <img src="./assets/perfil.png" class="rounded-circle" alt="perfil" width="30px" height="30px">
+            </div>
+            <div class="col-5">
+                <label class="usernameStyle pointerCursor" (click)="openUserOptionsList()">{{userName}}</label>
+            </div>
+            <div class="col-4 pointerCursor" (click)="openUserOptionsList()">
+                <h5>⌄</h5>
+            </div>
+        </div>
+    </div>
+</div>

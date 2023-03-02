@@ -1,0 +1,27 @@
+<ul class="list-group list-group-flush accountListRoundCorners" *ngIf="show">
+    <li class="list-group-item p-3 grayTextColor pointerCursor" *ngFor="let account of userAccountsList">
+        <div class="row">
+            <div class="col-2 pt-1">
+                <div class="d-flex align-items-center d-flex justify-content-center dot">
+                {{account.circleText}}
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-5 bold">
+                        {{account.company}}
+                    </div>
+                    <div class="col-7">
+                        {{account.username}}
+                    </div>
+                </div>
+                <div class="row graySubTitleItemList">
+                    <div class="col">
+                        {{account.userSessionTime}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+

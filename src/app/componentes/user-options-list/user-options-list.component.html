@@ -1,0 +1,5 @@
+<ul class="list-group list-group-flush optionsListRoundCorners" *ngIf="show">
+    <li class="list-group-item p-4 d-flex justify-content-center grayTextColor pointerCursor" *ngFor="let option of userOptionsList" (click)="onOptionClicked(option)">{{option}}</li>
+</ul>
+
+
